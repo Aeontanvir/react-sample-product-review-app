@@ -8,9 +8,9 @@ import {
 
 const initialState = {
     text: '',
-    movies: [],
+    movies: {},
     loading: false,
-    movie: [],
+    movie: {},
 }
 
 export default function (state = initialState, action) {

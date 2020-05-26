@@ -16,9 +16,10 @@ export const searchMovie = (text) => dispatch => {
 
 export const fetchMovies = (text) => dispatch => {
     axios.get(`${APIURL}s=${text}`).then(resp => {
+
         dispatch({
             type: FETCH_MOVIES,
-            payload: resp.date
+            payload: resp.data
         });
     }).catch(err => console.log(err));
 }
