@@ -9,7 +9,6 @@ class App extends Component {
     return (
       <div className="App">
         <TopNavbar></TopNavbar>
-        <Loader></Loader>
         <Footer></Footer>
       </div>
     );

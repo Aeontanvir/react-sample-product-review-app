@@ -7,6 +7,13 @@ import {
 import { APIURL } from '../APIURL';
 import axios from 'axios';
 
+export const searchMovie = (text) => dispatch => {
+    dispatch({
+        type: SEARCH_MOVIE,
+        payload: text
+    });
+};
+
 export const fetchMovies = (text) => dispatch => {
     axios.get(`${APIURL}s=${text}`).then(resp => {
         dispatch({
